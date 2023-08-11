@@ -8,8 +8,9 @@ public class Program{
             new Estado("Pernambuco","PE","Recife"),
         };
 
-        estados.OrderBy(e => e.Nome)
-        .ToList()
-        .ForEach(e => Console.WriteLine(e.Nome));
+        //ordenação e impressão dos valores utilizando LINQ
+        estados.OrderBy(e => e.Nome)//ordenação
+        .ToList()//cast para list
+        .ForEach(e => Console.WriteLine(e.Nome));//loop em toda lista e print nos valores
     }
 }
